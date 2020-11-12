@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body
+	{
+		background-color:  yellow;
+	}
+	h1
+	{
+		color:  blue;
+	}
+	p
+	{
+		color: navy;
+		font-family: courier;
+		font-size: large;
+	}
+	table, th, td 
+	{
+		border: 1px solid #000;
+	}
+	img
+	{
+		border. 2px solid black;
+		border-radius: 12px;
+		width: 150px
+		display: block;
+		padding: 2px;
+		margin: left;
+		opacity:0.8;
+	}
+	.photo
+	{
+		border-style: double;
+		border-width: 15px;
+		border-color: red;
+		border-radius: 15px;
+	}
+
+</style>
+
+<script>
+
+function aViitor()
+{
+	document.getElementById("numeProfil").innerHTML = "Ing. Duca Matei-Alexandru";
+	document.getElementById("pozaProfil").src = "Poza2.jpg";
+	document.body.style.backgroundColor = "lime";
+	document.getElementById("pozaProfil").style.opacity = "0.8";
+	document.getElementById("pozaProfil").style.border = "7px";
+	var tabelEd = document.getElementById("tabelEd");
+	tabelEd.rows[0].cells[0].innerHTML = "sport ";
+	tabelEd.rows[0].cells[1].innerHTML = "muzica ";
+	tabelEd.rows[1].cells[0].innerHTML = "istorie ";
+	tabelEd.rows[1].cells[1].innerHTML = " da";
+	tabelEd.rows[2].cells[0].innerHTML = " cum sa nu";
+	tabelEd.rows[2].cells[1].innerHTML = "fara nici o problema";
+}
+function aVarsta()
+{
+	var azi = new Date;
+	var myAge;
+	
+	var birthYear = docment.getElementById("varsta").innerHTML="18";
+	
+	myAge = azi.getFullYear() - parseInt(birthYear);
+	document.getElementById("varsta").innerHTML= myAge;
+}
+
+</script>
+
+<title>Page Title</title>
+
+</head> 
+
+<body>
+
+<h1 id="numeProfil">Duca Matei-Alexandru</h1>
+<img id="pozaProfil" src="Poza.jpg" height="200">
+<p>Citat reprezentativ: "I may not belive in myself but i belive in what I'm doing."</p>
+<p>ducamatei75@gmail.com</p>
+
+<p id="varsta" onmouseover = "aVarsta()" align=center>2001</p>
+
+<button type="button" onclick="aViitor()" >O alta pagina</button>
+
+<h1>Materii preferate</h1>
+<table id="tabelEd" style="width:100%">
+  <tr>
+    <td>Componente si circuite pasive</th>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3105.pdf">Componente si circuite pasive</a></th>
+    
+  </tr>
+  <tr>
+    <td>Programarea calculatoarelor</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/04.pdf"> Fisa disciplinei</a></td>
+  </tr>
+  <tr>
+    <td>Microprocesoare</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3133.pdf">Microprocesoare</a></td>
+  </tr>
+</table>
+<h1>Pasiuni</h1>
+<ul>
+  <li>Muzica</li>
+  <li>Sport</li>
+  <li>Istorie</li>
+</ul>
+
+</body>
+</html>
+
+
